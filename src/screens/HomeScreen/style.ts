@@ -1,150 +1,91 @@
 import {StyleSheet} from 'react-native';
 import colors from '../../config/colors';
 export default StyleSheet.create({
-    toolbar: {
-        backgroundColor: '#800080',
-        height: 56
-    },
-    drawer: {
-        flex: 1,
-        backgroundColor: '#f1f1f1'
-    },
-    temp: {
-        textAlign: 'center',
-        paddingTop: 50,
-        fontSize: 20,
-    },
-    button: {
-        paddingTop: 50,
-        alignItems: 'center',
-        backgroundColor: "purple",
-        width: 100,
-        height: 100,
-        justifyContent: 'center'
-
-    },
-    root: {
-        flexDirection: 'column',
-        flex: 1,
-      },
-      toolBar: {
+      submitButton: {
         backgroundColor: colors.primary,
-        paddingVertical: 8,
-        paddingHorizontal: 16,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        height: 80,
+        borderRadius: 25,
+        paddingHorizontal: 24,
+        paddingVertical: 6,
       },
-      toolBarLogoWrapper: {
-        backgroundColor: '#fff',
-        borderRadius: 6,
-        width: 78,
-        height: 60,
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
-      logo: {
-        width: 60,
-      },
-      toolBarProfile: {
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        flexDirection: 'row',
-      },
-      toolBarProfilePic: {
-        marginLeft: 8,
-        width: 60,
-        height: 60,
-        borderRadius: 30,
-        overflow: 'hidden',
-        backgroundColor: '#fff',
-        borderWidth: 1,
-        borderColor: '#ddd',
-      },
-      toolBarProfileWalletSection: {
-        backgroundColor: '#fff',
-        borderRadius: 6,
-        paddingVertical: 2,
-        paddingHorizontal: 4,
-        alignItems: 'center',
-        flexDirection: 'row',
-      },
-      toolBarProfileText: {
-        color: '#fff',
+      submitButtonText: {
+        textAlign: 'center',
         fontSize: 18,
-        marginBottom: 2,
+        fontWeight: '700',
+        color: colors.white,
       },
-      toolBarProfileTextSection: {
-        alignItems: 'flex-end',
-      },
-      toolBarWalletText: {
-        color: colors.primary,
-      },
-      toolBarWalletImg: {
-        width: 16,
-        height: 16,
-        marginRight: 4,
-      },
-      bottomToolbar: {
-        height: 44,
-        backgroundColor: colors.bottom,
-        paddingHorizontal: 16,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      },
-      bottomToolbarIcon: {
-        width: 24,
-      },
-      bottomToolbarImageWrapper: {
-        backgroundColor: '#fff',
-        padding: 4,
-        borderRadius: 4,
-      },
-      bottomToolbarImage: {
-        width: 30,
-        height: 26,
-      },
-      body: {
-        paddingHorizontal: 16,
-        paddingVertical: 16,
-      },
-      bodySection: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        alignItems: 'flex-start',
-        justifyContent: 'space-between',
-        marginBottom: 16,
-      },
-      menu: {
-        backgroundColor: colors.white,
-        borderRadius: 12,
+      images: {
+        alignSelf: "center",
+        width: 150,
+        height: 150,
         borderColor: 'black',
-        width: 110,
-        height: 100,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 16,
-        elevation: 20,
+        borderWidth: 1,
+        marginHorizontal: 3
       },
-      menu2: {
-        backgroundColor: colors.white,
-        borderRadius: 12,
-        width: 110,
-        height: 128,
-        alignItems: 'center',
-        justifyContent: 'center',
-        marginBottom: 16,
+      imagesList: {
+        width: 50,
+        height: 50,
+        borderColor: 'black',
+        borderWidth: 1,
+        marginHorizontal: 3
       },
-      menuIcon: {
-        height: 40,
-        marginBottom: 8,
-        
+      centeredView: {
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 22
       },
-      menuTitle: {
-        color: colors.black,
+      modalView: {
+        margin: 20,
+        backgroundColor: "white",
+        borderRadius: 20,
+        padding: 35,
+        //alignItems: "center",
+        shadowColor: "#000",
+        shadowOffset: {
+          width: 0,
+          height: 2
+        },
+        width: '60%',
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5
+      },
+      button: {
+        borderRadius: 20,
+        padding: 10,
+        elevation: 2
+      },
+      buttonOpen: {
+        backgroundColor: "#F194FF",
+      },
+      buttonClose: {
+        backgroundColor: "#2196F3",
+      },
+      textStyle: {
+        color: "white",
+        fontWeight: "bold",
+        textAlign: "center"
+      },
+      modalText: {
+        marginBottom: 15,
+        textAlign: "center"
+      },
+      formBodyInputWrapper: {
+        marginBottom: 4,
+      },
+      formInputLabel: {
+        marginBottom: 4,
+        color: colors.black
+      },
+      formInput: {
+        backgroundColor: '#fdecf5',
+        borderWidth: 1,
+        borderColor: colors.primary,
+        borderRadius: 6,
         fontSize: 14,
-        textAlign: 'center'
+        height: 38,
+        paddingHorizontal: 8,
+        justifyContent: 'center',
       },
+    
 });

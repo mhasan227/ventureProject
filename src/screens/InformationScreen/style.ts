@@ -5,4 +5,12 @@ export default StyleSheet.create({
         paddingTop: 50,
         fontSize: 20,
     },
+    button: {
+        paddingTop: 50,
+        alignItems: 'center',
+        backgroundColor: "purple",
+        width: 100,
+        height: 100,
+        justifyContent: 'center'
+    },
 });
